@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yoto-icon-maker"
+version = "0.1.0"
+description = "Validate and preview deliberately authored 16x16 Yoto track icons"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10"]
+license = {text = "MIT"}
+authors = [{name = "Santi Pochat"}]
+
+[project.scripts]
+yoto-icon = "yoto_icon_maker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
