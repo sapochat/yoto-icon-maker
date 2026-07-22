@@ -6,6 +6,10 @@ Image generators are useful for exploring a silhouette. They are not reliable fi
 
 > Unofficial community project. Not affiliated with or endorsed by Yoto.
 
+![A validated submarine sprite enlarged on the Yoto black display background](docs/submarine-preview.png)
+
+The repository includes both the true [`16×16 upload file`](examples/submarine.png) and this nearest-neighbor preview.
+
 ## What it checks
 
 - PNG format
@@ -22,7 +26,7 @@ Image generators are useful for exploring a silhouette. They are not reliable fi
 python3 -m venv .venv
 .venv/bin/pip install -e .
 
-yoto-icon verify examples/submarine.png --preview /tmp/submarine-preview.png
+.venv/bin/yoto-icon verify examples/submarine.png --preview /tmp/submarine-preview.png
 ```
 
 Or without installation:
@@ -45,7 +49,7 @@ PYTHONPATH=src python3 -m yoto_icon_maker.cli verify examples/submarine.png \
 ## Test
 
 ```bash
-PYTHONPATH=src python3 -m unittest discover -s tests -v
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
 ## Agent use
