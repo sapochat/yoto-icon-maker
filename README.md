@@ -22,6 +22,9 @@ The repository includes both the true [`16×16 upload file`](examples/submarine.
 
 ## Quick start
 
+Requires Python 3.11 or newer and Pillow 13.0.0 or newer. Python 3.10 is no
+longer supported so all supported installations can use the patched Pillow release.
+
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -e .
