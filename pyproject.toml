@@ -7,11 +7,8 @@ name = "yoto-icon-maker"
 version = "0.1.0"
 description = "Validate and preview deliberately authored 16x16 Yoto track icons"
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "Pillow>=12.3.0; python_version < '3.11'",
-    "Pillow>=13.0.0; python_version >= '3.11'",
-]
+requires-python = ">=3.11"
+dependencies = ["Pillow>=13.0.0"]
 license = {text = "MIT"}
 authors = [{name = "Santi Pochat"}]
 
